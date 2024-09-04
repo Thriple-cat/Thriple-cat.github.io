@@ -1,0 +1,17 @@
+<div class="row">
+    <p class="titles">{{ page.title}}</p>
+</div>
+
+<div class="container">
+    {% assign sorted_posts = site.events%}
+    {% for post in sorted_posts %}
+        <div class="row">
+            <div class="row" style="margin-top: 60px;">
+                <a href="{{post.url}}" style="text-decoration: none;">
+                    <p class="event_content">{{ post.title }}</p>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
