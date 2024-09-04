@@ -1,0 +1,128 @@
+<div class="row" style="margin-bottom: 80px;">
+  <div class="col-6">
+    <div class="row">
+      <img src="../assets/img/front_page_logo.png" alt="logo" class="ms-auto" style="height: 500px; width: auto; padding-top: 30px;">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="front-page-content-box">
+      <h1 class="roboto_font_all" style="font-weight: bold; font-size: 55px; text-decoration: underline;">
+        {{ page.front_page_title }}
+      </h1>
+      <p class="roboto_font_all" style="font-size: 20px; font-weight: bold;">{{ page.front_page_subtitle }}</p>
+      <div class="custom-markdown" style="font-size: 18px;">{{ page.front_papge_description | markdownify }}</div>
+    </div>
+    <div class="row" style="padding-left: 15px;">
+      <button class="square-button roboto_font_all" onclick="window.location.href='/project/'">READ MORE</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h1 class="roboto_font_all page_title">Explore</h1>
+</div>
+
+<div class="row">
+  <div class="col-4">
+    <div class="row">
+        <div class="container mt-5 text-center">
+            <a class="circle-bg" href="/team/">
+              <img src="../assets/img/Robotlogopurple.png" alt="team_logo">
+            </a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <p class="roboto_font_all" style="font-size: 20px; font-weight: bold; justify-content: center; display: flex;">Team</p>
+        <p class="roboto_font_all" style="font-size: 20px; justify-content: center; display: flex; text-align: center;">Meet the AISEC team, including our core members and external collaborators.</p>
+    </div>
+  </div>
+  <div class="col-4">
+      <div class="row">
+        <div class="container mt-5 text-center">
+            <a class="circle-bg" href="/software/">
+                <img src="../assets/img/software.png" alt="software_logo">
+            </a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <p class="roboto_font_all" style="font-size: 20px; font-weight: bold; justify-content: center; display: flex;">Software</p>
+        <p class="roboto_font_all" style="font-size: 20px; justify-content: center; display: flex; text-align: center;">Discover the software that we have have developed to improve the AI verification.</p>
+    </div>
+  </div>
+  <div class="col-4">
+      <div class="row">
+        <div class="container mt-5 text-center">
+            <a class="circle-bg" href="/outputs/">
+                <img src="../assets/img/publications.png" alt="publication_logo">
+            </a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <p class="roboto_font_all" style="font-size: 20px; font-weight: bold; justify-content: center; display: flex;">Publications</p>
+        <p class="roboto_font_all" style="font-size: 20px; justify-content: center; display: flex; text-align: center;">Explore our research papers that have come out of the AISEC project.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <h1 class="roboto_font_all page_title">News</h1>
+</div>
+
+<div class="row">
+  {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 3 %}
+  {% for post in sorted_news %}
+    <div class="col-4">
+      <div class="row">
+        <div class="container mt-5 text-center">
+            <div class="normal-bg">
+              <img src="{{ post.card_img }}" alt="update_logo">
+            </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <a class="custom-link" href="{{ post.url }}">
+          <p class="roboto_font_all" style="font-size: 26px; justify-content: center; display: flex; text-align: center">{{ post.card_title }}</p>
+        </a>
+        <p class="roboto_font_all" style="font-size: 18px; justify-content: center; display: flex; text-align: center;">Published: {{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<div class="row">
+  <h1 class="roboto_font_all page_title">Talks</h1>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+  <div class="col-6">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VAKELY_29fg" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <p class="roboto_font_all" style="font-size: 26px; justify-content: center; display: flex; text-align: center; font-weight: bold;">Professor Guy Katz: Verifying Recurrent Neural Networks using Invariant Inference</p>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Pd9uA7mhABk" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <p class="roboto_font_all" style="font-size: 26px; justify-content: center; display: flex; text-align: center; font-weight: bold;">Professor Marco Gaboardi: Formal Verification of Higher-order Probabilistic Programs</p>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="justify-content: center; display: flex; margin-top: 60px;">
+  <button class="video-button roboto_font_all" onclick="window.location.href='https://www.youtube.com/channel/UCuYLyAKf2mEq4ZSvMfwbfIg'">SEE MORE AISEC TALKS</button>
+</div>
+

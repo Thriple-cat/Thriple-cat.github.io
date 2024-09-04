@@ -1,0 +1,229 @@
+<div class="row">
+    <p class="titles">{{ page.page_title}}</p>
+</div>
+
+<div class="row">
+    <p class="subtitles">{{ page.subtitle}}</p>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-6">
+        <img src="{{ page.para_1_img }}" alt="img" class="para_img_feature mx-auto">
+    </div>
+    <div class="col-6">
+        <p class="para_title">{{ page.para_1_title }}</p>
+        <div class="custom-markdown">{{ page.para_1_content | markdownify }}</div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-6">
+        <p class="para_title">{{ page.para_2_title }}</p>
+        <p class="para_content">{{ page.para_2_content}}</p>
+    </div>
+    <div class="col-6">
+        <img src="{{ page.para_2_img }}" alt="img" class="para_img_feature mx-auto">
+    </div>
+</div>
+
+<div class="row" style="margin-top: 80px;">
+    <p class="section_title">{{ page.title_3}}</p>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-4">
+        <p class="section_subtitle">{{ page.uni_name_1 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.uni_img_1 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="icon_content">{{ page.uni_desc_1 | markdownify }}</div>
+        </div>
+    </div>
+    <div class="col-4">
+        <p class="section_subtitle">{{ page.uni_name_2 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.uni_img_2 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="icon_content">{{ page.uni_desc_2 | markdownify }}</div>
+        </div>
+    </div>
+    <div class="col-4">
+        <p class="section_subtitle">{{ page.uni_name_3 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.uni_img_3 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="icon_content">{{ page.uni_desc_3 | markdownify }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="justify-content: center; display: flex; margin-top: 60px;">
+    <button class="video-button roboto_font_all" href="/team">MEET THE TEAM</button>
+</div>
+
+
+<div class="row" style="margin-top: 80px;">
+    <p class="section_title">{{ page.title_4}}</p>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.partner_name_1 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.partner_img_1 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <p class="icon_content">{{ page.partner_desc_1 }}</p>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.partner_name_2 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.partner_img_2 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <p class="icon_content">{{ page.partner_desc_2 }}</p>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.partner_name_3 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.partner_img_3 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <p class="icon_content">{{ page.partner_desc_3 }}</p>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.partner_name_4 }}</p>
+        <div class="icon-box mx-auto">
+            <img src="{{ page.partner_img_4 }}" alt="logo">
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <p class="icon_content">{{ page.partner_desc_4 }}</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 80px;">
+    <p class="section_title">{{ page.title_5}}</p>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_1 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_1 }}">
+                <img src="{{ page.indu_par_img_1 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_2 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_2 }}">
+                <img src="{{ page.indu_par_img_2 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_3 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_3 }}">
+                <img src="{{ page.indu_par_img_3 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_4 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_4 }}">
+                <img src="{{ page.indu_par_img_4 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_5 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_5 }}">
+                <img src="{{ page.indu_par_img_5 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_6 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_6 }}">
+                <img src="{{ page.indu_par_img_6 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_7 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_7 }}">
+                <img src="{{ page.indu_par_img_7 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <p class="section_subtitle">{{ page.indu_par_name_8 }}</p>
+        <div class="icon-box mx-auto">
+            <a href="{{ page.indu_par_url_8 }}">
+                <img src="{{ page.indu_par_img_8 }}" alt="logo">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 80px;">
+    <p class="section_title">{{ page.title_6}}</p>
+</div>
+
+<div class="row">
+    <p class="icon_content">{{ page.subtitle_6}}</p>
+</div>
+
+<div class="row" style="justify-content: center; display: flex; margin-top: 10px;">
+    <button class="video-button roboto_font_all" href="https://www.ukri.org/councils/epsrc/" style="width: 500px;">Engineering and Physical Sciences Research Council</button>
+</div>
+
+<div class="row" style="margin-top: 80px;">
+    <div class="col-6">
+        <div class="circle-icon mx-auto"></div>
+        <div class="row" style="margin-top: 30px;">
+            <p class="icon_content">{{page.funding_content_1}}</p>
+            <p class="icon_content" style="font-weight: 600; font-size: 25px;">{{page.funding_reviewer_1}}</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="circle-icon mx-auto"></div>
+        <div class="row" style="margin-top: 30px;">
+            <p class="icon_content">{{page.funding_content_2}}</p>
+            <p class="icon_content" style="font-weight: 600; font-size: 25px;">{{page.funding_reviewer_2}}</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-6 my-auto">
+        <p class="para_title" style="text-align: center;">{{ page.para_3_title }}</p>
+        <p class="para_content" style="text-align: center;">{{ page.para_3_content}}</p>
+    </div>
+    <div class="col-6">
+        <img src="{{ page.para_3_img }}" alt="img" class="para_img_feature mx-auto">
+    </div>
+</div>
+
+
+

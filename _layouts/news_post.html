@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<main class="container">
+    <div class="news-post" style="margin-top: 60px;">
+        <h1 class="post-title">{{ page.card_title }}</h1>
+
+        <p class="post-subtitle" style="display: inline;">AISEC \ </p>
+        {% if page.card_category == "News" %}
+          <a class="custom-link" href="{{ page.news_url }}" style="display: inline;">
+            <p class="post-subtitle" style="display: inline;">{{ page.category }}</p>
+          </a>
+        {% endif %}
+        <p class="post-subtitle" style="display: inline;"> \ {{ page.date | date: "%B %d, %Y" }}</p>
+
+
+        <div class="post-content" >
+            {{ page.card_description | markdownify }}
+        </div>
+
+    </div>
+</main>

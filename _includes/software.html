@@ -1,0 +1,29 @@
+<div class="row">
+    <p class="titles">{{ page.title}}</p>
+</div>
+
+<div class="container">
+    {% assign sorted_posts = site.software %}
+    {% for post in sorted_posts %}
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-4" style="text-decoration: none;">
+                <a href="{{ post.github_url }}">
+                    <img src="{{ post.img }}" alt="Image" class="software_img">
+                </a>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <h3 class="software-title">{{ post.title }}</h3>
+                    <div class="software_content">{{ post.description | markdownify }}</div>
+                </div>
+                <div class="row" style="display: flex; margin-top: 30px; margin-left: 0px;">
+                    <button class="video-button roboto_font_all" onclick="window.location.href='{{ post.github_url }}'" style="width: 150px;">LEARN MORE</button>
+                </div>
+            </div>  
+        </div>
+    {% endfor %}
+</div>
+
+
+
+

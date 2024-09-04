@@ -1,0 +1,300 @@
+---
+layout: default
+---
+
+<div class="row">
+    <p class="titles">{{ page.page_title}}</p>
+    <p class="subtitle">{{ page.page_subtitle_1 }}</p>
+</div>
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col-6" style="align-items: center; display: flex;">
+        <img src="{{ page.img_1 }}" alt="image" class="events_img">
+    </div>
+    <div class="col-6">
+        <div class="row" style="margin-top: 30px;">
+            <p class="section_title">{{ page.section_1 }}</p>
+        </div>
+        <div class="row">
+            <p class="section_content">{{  page.content_1 }}</p>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <p class="section_subtitle_1">{{  page.section_2 }}</p>
+        </div>
+        <div class="row">
+            <div class="section_content">{{  page.content_2 }}</div>
+        </div>
+        <!-- <div class="row" style="margin-top: 30px;">
+            <p class="section_subtitle_1">{{  page.section_3 }}</p>
+        </div>
+        <div class="row">
+            <div class="section_content">{{  page.content_3 }}</div>
+        </div> -->
+        <div class="row" style="margin-top: 30px;">
+            <p class="section_subtitle_1">{{  page.section_4 }}</p>
+        </div>
+        <div class="row">
+            <div class="section_content">{{  page.content_4 }}</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <p class="subtitle" style="margin-top: 80px;">{{ page.page_subtitle_2 }}</p>
+</div>
+
+
+<div class="tabs" style="margin-top: 40px;">
+    <div class="tab active" data-target="content1">24th of July</div>
+    <div class="tab" data-target="content2">25th of July</div>
+    <div class="tab" data-target="content3">26th of July</div>
+    <div class="tab" data-target="content4">27th of July</div>
+</div>
+
+<div class="row">
+    <div id="content1" class="content-item row active" style="height: auto;">
+
+        <div class="row">
+            <p class="subtitle" style="margin-top: 30px; font-weight: 700; font-size: 30px;">{{page.table_big_title_1}}</p>
+        </div>
+
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_1 }}</p>
+                    <img src="{{ page.table_img_1 }}" alt="small_logo" class="table_img">
+                    <p class="table_name">{{ page.table_name_1 }}</p>
+                    <p class="table_uni">{{ page.table_uni_1}}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_1 }}</p>
+                <div class="table_content">{{ page.table_centent_1 | markdownify }}</div>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_2 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_2 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_3 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_3 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_4 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_4 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_5 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_5 }}</p>
+            </div>
+        </div>
+    </div>
+    <div id="content2" class="content-item row" style="height: auto;">
+
+        <div class="row">
+            <p class="subtitle" style="margin-top: 30px; font-weight: 700; font-size: 30px;">{{page.table_big_title_2}}</p>
+        </div>
+
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_1 }}</p>
+                    <img src="{{ page.table_img_1 }}" alt="small_logo" class="table_img">
+                    <p class="table_name">{{ page.table_name_1 }}</p>
+                    <p class="table_uni">{{ page.table_uni_1}}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_1 }}</p>
+                <div class="table_content">{{ page.table_centent_1 | markdownify }}</div>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_2 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_2 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_3 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_3 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_4 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_4 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_5 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_5 }}</p>
+            </div>
+        </div>
+    </div>
+    <div id="content3" class="content-item row" style="height: auto;">
+
+        <div class="row">
+            <p class="subtitle" style="margin-top: 30px; font-weight: 700; font-size: 30px;">{{page.table_big_title_3}}</p>
+        </div>
+
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_1 }}</p>
+                    <img src="{{ page.table_img_1 }}" alt="small_logo" class="table_img">
+                    <p class="table_name">{{ page.table_name_1 }}</p>
+                    <p class="table_uni">{{ page.table_uni_1}}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_1 }}</p>
+                <div class="table_content">{{ page.table_centent_1 | markdownify }}</div>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_2 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_2 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_3 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_3 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_4 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_4 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_5 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_5 }}</p>
+            </div>
+        </div>
+    </div>
+    <div id="content4" class="content-item row" style="height: auto;">
+
+        <div class="row">
+            <p class="subtitle" style="margin-top: 30px; font-weight: 700; font-size: 30px;">{{page.table_big_title_4}}</p>
+        </div>
+
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_1 }}</p>
+                    <img src="{{ page.table_img_1 }}" alt="small_logo" class="table_img">
+                    <p class="table_name">{{ page.table_name_1 }}</p>
+                    <p class="table_uni">{{ page.table_uni_1}}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_1 }}</p>
+                <div class="table_content">{{ page.table_centent_1 | markdownify }}</div>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_2 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_2 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_3 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_3 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_4 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_4 }}</p>
+            </div>
+        </div>
+        <div class="row tab_content">
+            <div class="col-4" style="align-items: center;">
+                <div class="row"  style="display: flex; justify-content: center;">
+                    <p class="table_time">{{ page.table_time_5 }}</p>
+                </div>
+            </div>
+            <div class="col-8" style="display: flex; align-items: center;">
+                <p class="tabel_title">{{ page.table_title_5 }}</p>
+            </div>
+        </div>
+    </div>
+</div>

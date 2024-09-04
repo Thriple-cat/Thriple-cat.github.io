@@ -1,0 +1,38 @@
+<div class="row">
+    <p class="titles">{{ page.title}}</p>
+</div>
+
+
+<div class="container">
+    {% assign sorted_posts = site.news | sort: "date" | reverse %}
+    {% for post in sorted_posts %}
+        {% assign testing_value = forloop.index0 % 3 %}
+        {% if testing_value == 0 %}
+            {% if forloop.index0 != 0 %}
+                </div>
+            {% endif %}
+            <div class="row">
+        {% endif %}
+        <div class="col-12 col-md-4">
+            <div class="custom-card">
+                <img src="{{ post.card_img }}" alt="Image" class="card-image">
+                <a href="{{ post.url }}" style="text-decoration: none;">
+                    <h3 class="card-title">{{ post.card_title }}</h3>
+                </a>
+                <p class="card-text">Published: {{ post.date | date: "%B %d, %Y" }}</p>
+                <p class="card-text">Category: {{ post.card_category }}</p>
+                <div class="card-description">{{ post.card_description | markdownify }}</div>
+            </div>
+        </div>
+        {% if forloop.index == forloop.length %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+
+
+
+
+
