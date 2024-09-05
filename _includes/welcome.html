@@ -1,10 +1,10 @@
-<div class="row" style="margin-bottom: 80px;">
-  <div class="col-6">
+ <div class="row" style="margin-bottom: 80px;">
+  <div class="col-12 col-md-6">
     <div class="row">
-      <img src="../assets/img/front_page_logo.png" alt="logo" class="ms-auto" style="height: 500px; width: auto; padding-top: 30px;">
+      <img src="../assets/img/front_page_logo.png" alt="logo" class="ms-auto" style="height: 100%; width: auto; padding-top: 30px; max-height: 500px;">
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-12 col-md-6">
     <div class="front-page-content-box">
       <h1 class="roboto_font_all" style="font-weight: bold; font-size: 55px; text-decoration: underline;">
         {{ page.front_page_title }}
@@ -23,7 +23,7 @@
 </div>
 
 <div class="row">
-  <div class="col-4">
+  <div class="col-12 col-md-4">
     <div class="row">
         <div class="container mt-5 text-center">
             <a class="circle-bg" href="/team/">
@@ -36,7 +36,7 @@
         <p class="roboto_font_all" style="font-size: 20px; justify-content: center; display: flex; text-align: center;">Meet the AISEC team, including our core members and external collaborators.</p>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-12 col-md-4">
       <div class="row">
         <div class="container mt-5 text-center">
             <a class="circle-bg" href="/software/">
@@ -49,7 +49,7 @@
         <p class="roboto_font_all" style="font-size: 20px; justify-content: center; display: flex; text-align: center;">Discover the software that we have have developed to improve the AI verification.</p>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-12 col-md-4">
       <div class="row">
         <div class="container mt-5 text-center">
             <a class="circle-bg" href="/outputs/">
@@ -72,7 +72,7 @@
 <div class="row">
   {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 3 %}
   {% for post in sorted_news %}
-    <div class="col-4">
+    <div class="col-12 col-md-4">
       <div class="row">
         <div class="container mt-5 text-center">
             <div class="normal-bg">
@@ -96,7 +96,7 @@
 </div>
 
 <div class="row" style="margin-top: 60px;">
-  <div class="col-6">
+  <div class="col-12 col-md-6">
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/VAKELY_29fg" 
                 frameborder="0" 
@@ -108,7 +108,7 @@
         <p class="roboto_font_all" style="font-size: 26px; justify-content: center; display: flex; text-align: center; font-weight: bold;">Professor Guy Katz: Verifying Recurrent Neural Networks using Invariant Inference</p>
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-12 col-md-6">
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/Pd9uA7mhABk" 
                 frameborder="0" 
@@ -125,4 +125,3 @@
 <div class="row" style="justify-content: center; display: flex; margin-top: 60px;">
   <button class="video-button roboto_font_all" onclick="window.location.href='https://www.youtube.com/channel/UCuYLyAKf2mEq4ZSvMfwbfIg'">SEE MORE AISEC TALKS</button>
 </div>
-
