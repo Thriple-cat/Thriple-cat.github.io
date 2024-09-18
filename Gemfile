@@ -35,3 +35,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'jekyll-scholar'
 
 gem "bibtex-ruby", "~> 6.0"
+
+gem 'racc'
