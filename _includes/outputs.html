@@ -12,47 +12,28 @@
             <img src="../assets/img/together.png" alt="imgaes" class="outputs_img">
         </div>
     </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-3">
+    <div id="publications-container">
+        {% for entry in site.publications limit:10 %}
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-3">
+            </div>
+            <div class="col-9">
+                <p class="paper_title">{{ entry.title }}</p>
+                <p class="paper_authors">{{ entry.author | join: ', ' }}</p>
+                <a href="https://conf.researchr.org/home/aplas-2020" class="conference_link">
+                    <p class="conference_name">{{ entry.booktitle }}</p>
+                </a>
+                <p class="paper_authors" style="display: inline;">{{ entry.year }}, </p>
+                <a href="https://www.macs.hw.ac.uk/~ek19/aplas2020.pdf" style="text-decoration: none;">
+                    <p class="paper_authors" style="display: inline; color: rgb(141, 11, 11); font-weight: 700;">Read more</p>
+                </a>
+            </div>
         </div>
-        <div class="col-9">
-            <p class="paper_title"></p>
-            <p class="paper_authors">Wen Kokke, Ekaterina Komendantskaya, Daniel Kienitz, Bob Atkey, David Aspinall. </p>
-            <a href="https://conf.researchr.org/home/aplas-2020" class="conference_link">
-                <p class="conference_name">The 18th Asian Symposium on Programming Languages and Systems</p>
-            </a>
-            <p class="paper_authors" style="display: inline;">2020, </p>
-            <a href="https://www.macs.hw.ac.uk/~ek19/aplas2020.pdf" style="text-decoration: none;">
-                <p class="paper_authors" style="display: inline; color: rgb(141, 11, 11); font-weight: 700;">Read more</p>
-            </a>
-        </div>
+    {% endfor %}
     </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-3">
-        </div>
-        <div class="col-9">
-            <p class="paper_title"></p>
-            <p class="paper_authors">Marco Casadio, Matthew L. Daggitt, Ekaterina Komendantskaya, Wen Kokke, Daniel Kienitz, Rob Stewart</p>
-            <a href="http://arxiv.org/abs/2104.01396" class="conference_link">
-                <p class="conference_name">Under submission</p>
-            </a>
-            <p class="paper_authors" style="display: inline;">2021, </p>
-            <a href="http://arxiv.org/abs/2104.01396" style="text-decoration: none;">
-                <p class="paper_authors" style="display: inline; color: rgb(141, 11, 11); font-weight: 700;">Read more</p>
-            </a>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-3">
-        </div>
-        <div class="col-9">
-            <p class="paper_title">Actions You Can Handle: Dependent Types for AI Plans</p>
-            <p class="paper_authors">Alasdair Hill, Ekaterina Komendantskaya, Matthew L. Daggitt, Ronald P. A. Petrick</p>
-            <p class="conference_name" style="color: #ffb923;">Workshop on Type-driven Development'21, at ICFP'21</p>
-            <p class="paper_authors" style="display: inline;">2021, </p>
-            <a href="https://arxiv.org/abs/2105.11267" style="text-decoration: none;">
-                <p class="paper_authors" style="display: inline; color: rgb(141, 11, 11); font-weight: 700;">Read more</p>
-            </a>
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-12 text-center">
+            <button id="load-more" class="btn btn-primary" onclick="loadMorePublications()">Load More</button>
         </div>
     </div>
 </div>
@@ -179,7 +160,37 @@
 </div>
 
 
-
+<script>
+    let currentIndex = 10;
+    function loadMorePublications() {
+        const papers = {{ site.publications | jsonify }};
+        const container = document.getElementById('publications-container');
+        for (let i = currentIndex; i < currentIndex + 10 && i < papers.length; i++) {
+            const entry = papers[i];
+            const row = document.createElement('div');
+            row.classList.add('row');
+            row.style.marginTop = '15px';
+            row.innerHTML = `
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <p class="paper_title">${entry.title}</p>
+                    <p class="paper_authors">${entry.author}</p>
+                    ${entry.type === 'article' ? `<a href="${entry.url}" class="conference_link"><p class="conference_name">${entry.journal}</p></a>` : ''}
+                    ${entry.type === 'inproceedings' ? `<a href="${entry.url}" class="conference_link"><p class="conference_name">${entry.booktitle}</p></a>` : ''}
+                    <p class="paper_authors" style="display: inline;">${entry.year}, </p>
+                    <a href="${entry.url}" style="text-decoration: none;">
+                        <p class="paper_authors" style="display: inline; color: rgb(141, 11, 11); font-weight: 700;">Read more</p>
+                    </a>
+                </div>
+            `;
+            container.appendChild(row);
+        }
+        currentIndex += 10;
+        if (currentIndex >= papers.length) {
+            document.getElementById('load-more').style.display = 'none';
+        }
+    }
+</script>
 
 
 

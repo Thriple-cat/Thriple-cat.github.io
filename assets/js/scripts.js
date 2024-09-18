@@ -20,17 +20,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     var navbar = document.querySelector('.navbar-feature');
-//     var lastScrollTop = 0;
-
-//     window.addEventListener("scroll", function() {
-//         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//         if (scrollTop > lastScrollTop) {
-//             navbar.style.top = "26px"; // 导航栏向上移动一半高度
-//         } else {
-//             navbar.style.top = "0"; // 导航栏恢复原位
-//         }
-//         lastScrollTop = scrollTop;
-//     });
-// });
