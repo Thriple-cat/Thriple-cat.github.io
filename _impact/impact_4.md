@@ -1,0 +1,23 @@
+---
+layout: new_impact
+img_url: "../assets/img/news-red-2500x2500px.png" 
+influence_name: "Independent Advisory Group on Emerging Technologies report"
+influence_type: "Contribution to a national consultation/review"
+healthcare_area: ""
+title: ""
+issuing_organisation: ""
+publication_citing: ""
+contribution_description: "Contributed to the expert report of the Independent Advisory Group on Emerging Technologies in Policing, recommending methods to assess the impact of AI in policing, ensure legal compliance of drones, and ensure the divergence from the EU AI Act does not hamper cross border police investigations."
+cited_publication: ""
+year: "2023"
+geographic_influence: "Local/Municipal/Regional"
+country: "United Kingdom"
+policy_influence: "Government, Democracy Justice,Security, Diplomacy"
+describe_other: ""
+specific_impacts: "No impacts yet"
+impact: ""
+link: "https://www.sipr.ac.uk/wp-content/uploads/2023/02/Independent-advisory-group-on-emerging-technologies-in-policing-Final-report.pdf"
+digital_id: ""
+source: "Manual"
+publication_id: "640b9869545aa6.13405317"
+---

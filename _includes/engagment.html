@@ -1,0 +1,71 @@
+<div class="row">
+    <p class="titles">{{ page.title}}</p>
+</div>
+
+
+<div class="row" style="margin-top: 40px;">
+    <p class="subtitle-engagement">Engagement</p>
+</div>
+
+<div class="container">
+    {% assign sorted_posts = site.engagement %}
+    {% for post in sorted_posts %}
+        {% assign testing_value = forloop.index0 % 3 %}
+        {% if testing_value == 0 %}
+            {% if forloop.index0 != 0 %}
+                </div>
+            {% endif %}
+            <div class="row">
+        {% endif %}
+        <div class="col-12 col-md-4">
+            <div class="custom-card">
+                <img src="{{ post.img_url }}" alt="Image" class="card-image">
+                <a href="{{ post.url }}" style="text-decoration: none;">
+                    <h3 class="card-title">{{ post.activity_title }}</h3>
+                </a>
+                <p class="card-text">Activity Type: {{ post.activity_type }}</p>
+                <p class="card-text">Year: {{ post.year }}</p>
+                <div class="card-description">{{ post.result | markdownify }}</div>
+            </div>
+        </div>
+        {% if forloop.index == forloop.length %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<div class="row" style="margin-top: 60px;">
+    <p class="subtitle-engagement">Impact</p>
+</div>
+
+<div class="container">
+    {% assign sorted_posts = site.impact %}
+    {% for post in sorted_posts %}
+        {% assign testing_value = forloop.index0 % 3 %}
+        {% if testing_value == 0 %}
+            {% if forloop.index0 != 0 %}
+                </div>
+            {% endif %}
+            <div class="row">
+        {% endif %}
+        <div class="col-12 col-md-4">
+            <div class="custom-card">
+                <img src="{{ post.img_url }}" alt="Image" class="card-image">
+                <a href="{{ post.url }}" style="text-decoration: none;">
+                    <h3 class="card-title">{{ post.influence_name }}</h3>
+                </a>
+                <p class="card-text">Activity Type: {{ post.influence_type }}</p>
+                <p class="card-text">Year: {{ post.year }}</p>
+                <div class="card-description">{{ post.contribution_description | markdownify }}</div>
+            </div>
+        </div>
+        {% if forloop.index == forloop.length %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+
+

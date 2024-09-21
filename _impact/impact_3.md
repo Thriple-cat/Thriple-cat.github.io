@@ -1,0 +1,23 @@
+---
+layout: new_impact
+img_url: "../assets/img/news-red-2500x2500px.png" 
+influence_name: "DATAIA scientific advisory board"
+influence_type: "Participation in a guidance/advisory committee"
+healthcare_area: ""
+title: ""
+issuing_organisation: ""
+publication_citing: ""
+contribution_description: "I am on the scientific review board for DATAIA the French Institute for Data Science and Artificial Intelligence (partnered with the Turing Institute). Bi-annual review meetings in Paris-Saclay"
+cited_publication: ""
+year: "2020"
+geographic_influence: "Europe"
+country: ""
+policy_influence: "Digital/Communication/Information Technologies (including Software)"
+describe_other: ""
+specific_impacts: "Not known"
+impact: ""
+link: "https://www.dataia.eu/linstitut/le-conseil-scientifique"
+digital_id: ""
+source: "Manual"
+publication_id: "5e53c8283aa250.52922722"
+---

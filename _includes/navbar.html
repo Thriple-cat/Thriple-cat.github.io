@@ -1,83 +1,3 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-color navbar-feature">
-    <div class="container">
-      <a class="navbar-brand navbar-text-features" href="/" style="font-size: 30px;">{{ site.title }}</a>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/">Home</a>
-              </li>
-              <li class="nav-item {% if page.url == '/project/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/project/">Project</a>
-              </li>
-              <li class="nav-item {% if page.url == '/team/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/team/">Team</a>
-              </li>
-              <li class="nav-item {% if page.url == '/news/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/news/">News</a>
-              </li>
-              <li class="nav-item dropdown {% if page.url == '/events/' %}active{% endif %}">
-                  <a class="nav-link dropdown-toggle roboto_font" href="/events/" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Events
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% assign all_posts = site.events %}
-                        {% for post in all_posts %}
-                            <a class="dropdown-item roboto_font" href="{{ post.url }}">{{ post.title }}</a>
-                        {% endfor %}
-                      </div>
-              </li>
-              <li class="nav-item {% if page.url == '/software/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/software/">Software</a>
-              </li>
-              <li class="nav-item {% if page.url == '/outputs/' %}active{% endif %}">
-                  <a class="nav-link roboto_font" href="/outputs/">Other Outputs</a>
-              </li>
-              <li class="nav-item">
-                  <button class="btn custom-button side-menu-features" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                      <i class="fas fa-bars"></i>
-                  </button>
-              </li>
-          </ul>
-      </div>
-    </div>
-</nav>
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Navigation</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav ms-auto">
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/">Home</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/project">Project</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/team">Team</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/news">News</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/events">Events</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/software">Software</a>
-          </li>
-          <li class="sidebar-item">
-              <a class="nav-link side-menu-text" href="/outputs">Other Outputs</a>
-          </li>
-        </ul>
-    </div>
-</div>
- -->
-
-
-
 <nav class="navbar navbar-expand-lg navbar-color navbar-feature">
     <div class="container">
       <a class="navbar-brand navbar-text-features" href="/" style="font-size: 30px;">{{ site.title }}</a>
@@ -114,6 +34,9 @@
               <li class="nav-item {% if page.url == '/software/' %}active{% endif %}">
                   <a class="nav-link roboto_font" href="/software/">Software</a>
               </li>
+              <li class="nav-item {% if page.url == '/engagment/' %}active{% endif %}">
+                <a class="nav-link roboto_font" href="/engagment/">Engagement and Impact</a>
+              </li>
               <li class="nav-item {% if page.url == '/outputs/' %}active{% endif %}">
                   <a class="nav-link roboto_font" href="/outputs/">Other Outputs</a>
               </li>
@@ -151,6 +74,9 @@
           </li>
           <li class="sidebar-item">
               <a class="nav-link side-menu-text" href="/software">Software</a>
+          </li>
+          <li class="sidebar-item">
+              <a class="nav-link side-menu-text" href="/engagement">Engagement and Impact</a>
           </li>
           <li class="sidebar-item">
               <a class="nav-link side-menu-text" href="/outputs">Other Outputs</a>

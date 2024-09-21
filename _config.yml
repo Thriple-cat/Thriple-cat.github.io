@@ -48,6 +48,10 @@ collections:
     output: true
   events:
     output: true
+  engagement:
+    output: true
+  impact:
+    output: true
 
 scholar:
   style: apa

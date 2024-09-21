@@ -1,0 +1,23 @@
+---
+layout: new_impact
+img_url: "../assets/img/news-red-2500x2500px.png" 
+influence_name: "AI4People ethics guidelines for the use of AI by the legal profession"
+influence_type: "Participation in a guidance/advisory committee"
+healthcare_area: ""
+title: ""
+issuing_organisation: ""
+publication_citing: ""
+contribution_description: "as Chairman Legal Services Industry Committee of AI4People, I was the lead author of our Guidelines of the Ethical use of AI by the Legal Profession which was presented to the European Commission at a workshop in Brussels, organised by Atomium."
+cited_publication: ""
+year: "2020"
+geographic_influence: "Europe"
+country: ""
+policy_influence: "Digital/Communication/Information Technologies (including Software),Government, Democracy Justice"
+describe_other: ""
+specific_impacts: "Not known"
+impact: ""
+link: "https://ai4people.eu/wp-content/pdf/AI4People7AIGlobalFrameworks.pdf"
+digital_id: ""
+source: "Manual"
+publication_id: "65d0fb50363a13.04124723"
+---

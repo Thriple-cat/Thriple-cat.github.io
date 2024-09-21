@@ -1,0 +1,23 @@
+---
+layout: new_impact
+img_url: "../assets/img/news-red-2500x2500px.png" 
+influence_name: "Legislating for AVs in Dubai"
+influence_type: "Participation in a guidance/advisory committee"
+healthcare_area: ""
+title: ""
+issuing_organisation: ""
+publication_citing: ""
+contribution_description: "Advisor to a project hosted at Dubai University together with Dubai Road Transportation Authority (RTA) and  Dubai Police to develop road traffic laws for Autonomous vehicles"
+cited_publication: ""
+year: "2023"
+geographic_influence: "Asia"
+country: ""
+policy_influence: "Government, Democracy Justice,Transport"
+describe_other: ""
+specific_impacts: "No impacts yet"
+impact: ""
+link: "https://www.sipr.ac.uk/wp-content/uploads/2023/02/Independent-advisory-group-on-emerging-technologies-in-policing-Final-report.pdf"
+digital_id: ""
+source: "Manual"
+publication_id: "64100d4932f8a7.00440403"
+---

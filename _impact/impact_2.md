@@ -1,0 +1,23 @@
+---
+layout: new_impact
+img_url: "../assets/img/news-red-2500x2500px.png" 
+influence_name: "appointed to the Independent advisory group on emerging technologies in policing (Scotland) "
+influence_type: "Membership of a guideline committee"
+healthcare_area: ""
+title: ""
+issuing_organisation: ""
+publication_citing: ""
+contribution_description: ""
+cited_publication: ""
+year: "2020"
+geographic_influence: "National"
+country: "United Kingdom"
+policy_influence: "Government, Democracy and Justice"
+describe_other: ""
+specific_impacts: "No impacts yet"
+impact: ""
+link: ""
+digital_id: ""
+source: "Manual"
+publication_id: "604626e8017369.15068163"
+---
