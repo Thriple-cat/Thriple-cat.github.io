@@ -2,11 +2,59 @@
     <p class="titles">{{ page.title}}</p>
 </div>
 
+<div class="row" style="margin-top: 40px;">
+    <p class="subtitle-engagement"> Research data sets</p>
+</div>
+
+<div class="container">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-4" style="display: flex; align-items: center;">
+            <img src="../assets/img/software.png" alt="Image" class="software_img">
+        </div> 
+        <div class="col-8" style="text-decoration: none;">
+            <div class="row">
+                <h3 class="software-title">Machine Learning Classification of Price Extrema Based on Market Microstructure and Price Action Features. A Case Study of S&P500 E-mini Futures. Reproducibility Package</h3>
+                <div class="software_content" style="font-size: 24px; font-weight: 600;">Publish data: 2021</div>
+                <div class="software_content" style="font-size: 24px; font-weight: 600;">Type: Computer model/algorithm</div>
+                <div class="software_content">The study introduces an automated trading system for S&P500 E-mini futures (ES) based on state-of-the-art machine learning. Concretely: we extract a set of scenarios from the tick market data to train the models and further use the predictions to statistically assess the soundness of the approach. We define the scenarios from the local extrema of the price action. Price extrema is a commonly traded pattern, however, to the best of our knowledge, there is no study presenting a pipeline for automated classification and profitability evaluation. Additionally, we evaluate the approach in the simulated trading environment on the historical data. Our study is filling this gap by presenting a broad evaluation of the approach supported by statistical tools which make it generalisable to unseen data and comparable to other approaches. By Artur Sokolovsky; Luca Arnaboldi</div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 30px; margin-left: 0px;">
+                <button class="video-button roboto_font_all" onclick="window.location.href='https://zenodo.org/record/4732928#.YhuoMz_P1hE'" style="width: 150px;">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-4" style="display: flex; align-items: center;">
+            <img src="../assets/img/software.png" alt="Image" class="software_img">
+        </div> 
+        <div class="col-8" style="text-decoration: none;">
+            <div class="row">
+                <h3 class="software-title">Explainable ML-driven Strategy for Automated Trading Pattern Extraction - Reproducibility Package</h3>
+                <div class="software_content" style="font-size: 24px; font-weight: 600;">Publish data: 2021</div>
+                <div class="software_content" style="font-size: 24px; font-weight: 600;">Type: Data analysis technique</div>
+                <div class="software_content">Financial markets are a source of non-stationary multidimensional time series which has been drawing attention for decades. Each financial instrument has its specific changing over time properties, making their analysis a complex task. Improvement of understanding and development of methods for financial time series analysis is essential for successful operation on financial markets. In this study we propose a volume-based data pre-processing method for making financial time series more suitable for machine learning pipelines. We use a statistical approach for assessing the performance of the method. Namely, we formally state the hypotheses, set up associated classification tasks, compute effect sizes with confidence intervals, and run statistical tests to validate the hypotheses. We additionally assess the trading performance of the proposed method on historical data and compare it to a previously published approach. Our analysis shows that the proposed volume-based method allows successful classification of the financial time series patterns, and also leads to better classification performance than a price action-based method, excelling specifically on more liquid financial instruments. Finally, we propose an approach for obtaining feature interactions directly from tree-based models on example of CatBoost estimator, as well as formally assess the relatedness of the proposed approach and SHAP feature interactions with a positive outcome. In this code repository you will find datasets and a notebook to reproduce experiments from our paper.</div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 30px; margin-left: 0px;">
+                <button class="video-button roboto_font_all" onclick="window.location.href='https://zenodo.org/record/4756325#.YhupAz_P1hE'" style="width: 150px;">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 80px;">
+    <p class="subtitle-engagement">Software and Technical Products</p>
+</div>
+
 <div class="container">
     {% assign sorted_posts = site.software %}
     {% for post in sorted_posts %}
-        <div class="row" style="margin-top: 50px;">
-            <div class="col-4" style="text-decoration: none;">
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-4" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
                 <a href="{{ post.github_url }}">
                     <img src="{{ post.img }}" alt="Image" class="software_img">
                 </a>
@@ -14,9 +62,22 @@
             <div class="col-8">
                 <div class="row">
                     <h3 class="software-title">{{ post.title }}</h3>
+                    {% if post.type != "" %}
+                        <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Type: {{ post.type}}</div>
+                    {% endif %}
+                    {% if post.year != "" %}
+                        <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Published Year: {{ post.year}}</div>
+                    {% endif %}
+                    {% if post.impacts != "" %}
+                        <div style="display: inline;">
+                            <p class="software_content" style="font-weight: 600; display: inline;"> Impacts: </p>
+                            <p class="software_content" style="display: inline;">{{ post.impacts }}</p>
+                        </div>
+                    {% endif %}
                     <div class="software_content">{{ post.description | markdownify }}</div>
+                    
                 </div>
-                <div class="row" style="display: flex; margin-top: 30px; margin-left: 0px;">
+                <div class="row" style="display: flex; margin-top: 20px; margin-left: 0px;">
                     <button class="video-button roboto_font_all" onclick="window.location.href='{{ post.github_url }}'" style="width: 150px;">LEARN MORE</button>
                 </div>
             </div>  
@@ -25,5 +86,64 @@
 </div>
 
 
+<div class="row" style="margin-top: 80px;">
+    <p class="subtitle-engagement">Research Tools and Methods</p>
+</div>
 
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-4" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+            <a href="https://huggingface.co/bigscience/bloom">
+                <img src="../assets/img/hugging.jpg" alt="Image" class="software_img">
+            </a>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h3 class="software-title">BLOOM Large Language Model</h3>
+                <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Type: Improvements to research infrastructure</div>
+                <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Published Year: 2022</div>
+                <div style="display: inline;">
+                    <p class="software_content" style="font-weight: 600; display: inline;"> Impacts: </p>
+                    <p class="software_content" style="display: inline;">First publicly available "foundational model". Widely used and compared in the community. The ambition is to boost academic research and public benefits in competition to privately owned models, e.g. ChatGPT etc,.</p>
+                </div>
+                <div style="display: inline; margin-top: 15px;">
+                    <p class="software_content" style="font-weight: 600; display: inline;"> Description: </p>
+                    <p class="software_content" style="display: inline;">We created BLOOM the first publicly available large language model. This was a year-long collaboration as part of the BigScience workshop with several hundred of international scientists. I co-led one of the working groups. BLOOM stands for BigScience Large Open-science Open-access Multilingual Language Model.</p>
+                </div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 20px; margin-left: 0px;">
+                <button class="video-button roboto_font_all" onclick="window.location.href='https://huggingface.co/bigscience/bloom'" style="width: 150px;">LEARN MORE</button>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-4" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+            <a href="https://vehicle-lang.github.io/tutorial/">
+                <img src="../assets/img/Robotlogopurple.png" alt="Image" class="software_img">
+            </a>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h3 class="software-title">Tutorial on Neural Network Verification with Vehicle</h3>
+                <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Type: Improvements to research infrastructure</div>
+                <div class="software_content" style="font-size: 18px; font-weight: 600; margin-top: 0px;">Published Year: 2023</div>
+                <div style="display: inline;">
+                    <p class="software_content" style="font-weight: 600; display: inline;"> Impacts: </p>
+                    <p class="software_content" style="display: inline;">This tutorial has been run live and adapted for different audiences at: FOMLAS'23 the 6th Workshop on Formal Methods for ML-Enabled Autonomous Systems co-allocated with CAV'23 in Paris, France; 18 July 2023; VETSS Summer School at the University of Surrey, UK; 23 August 2023; Youtube recording available; ICFP'23 the International Conference on Functional Programming in Seattle, USA; 08 September 2023.</p>
+                </div>
+                <div style="display: inline; margin-top: 15px;">
+                    <p class="software_content" style="font-weight: 600; display: inline;"> Description: </p>
+                    <p class="software_content" style="display: inline;">Machine learning components, such as neural networks, gradually make their way into  software; and, when the software is critically safe, the machine learning components must be  verifiably safe. This gives rise to the problem of neural network verification. The community  has been making rapid progress in developing methods for incorporating logical specifications  into neural networks, both in training and verification. However, to truly unlock the ability to  verify real-world neural network-enhanced systems we believe the following is necessary:  1. The specification should be written once and should automatically work with training  and verification tools. 2. The specification should be written in a manner independent of any  particular neural network training/inference platform. 3. The specification should be able to be  written as a high-level property over the problem space, rather than a property over the input  space (of the neural network). 4. After verification the specification should be exportable to  general interactive theorem provers so that its proof can be incorporated into proofs about the  larger systems around the neural network.  In this tutorial we presented Vehicle, a tool that allows users to do all of this. We provided an  introduction to the Vehicle specification language, and then walked attendees through using it to  express a variety of famous and not-so-famous specifications. Subsequently we demonstrate how a  specification can be compiled down to i) queries for network verifiers, ii) Tensorflow graphs to be  used as loss functions during training and iii) cross-compiled to Agda, a main-stream interactive  theorem prover. Finally we discussed some of the technical challenges in the implementation  as well as some of the outstanding problems.</p>
+                </div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 20px; margin-left: 0px;">
+                <button class="video-button roboto_font_all" onclick="window.location.href='https://vehicle-lang.github.io/tutorial/'" style="width: 150px;">LEARN MORE</button>
+            </div>
+        </div>  
+    </div>
+</div>
 

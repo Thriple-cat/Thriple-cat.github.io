@@ -1,0 +1,9 @@
+---
+img: "../assets/img/GitHub-Mark.png"
+github_url: "https://github.com/vehicle-lang/vehicle"
+title: "Vehicle"
+type: "Webtool/Application"
+year: "2022"
+description: "The application provides an Interface for Neural Network Verifiers with Interactive Theorem Provers. Verification of neural networks is currently a hot topic in automated theorem proving. Progress has been rapid and there are now a wide range of tools available that can verify properties of networks with hundreds of thousands of nodes. In theory this opens the door to the verification of larger control systems that make use of neural network components. However, although work has managed to incorporate the results of these verifiers to prove larger properties of individual systems, there is currently no general methodology for bridging the gap between verifiers and interactive theorem provers (ITPs). In this paper we present Vehicle, our solution to this problem. Vehicle is equipped with an expressive domain specific language for stating neural network specifications which can be compiled to both verifiers and ITPs. It overcomes previous issues with maintainability and scalability in similar ITP formalisations by using a standard ONNX file as the single canonical representation of  the network. We demonstrate its utility by using it to connect the neural network verifier Marabou to Agda and then formally verifying that a car steered by a neural network never leaves the road, even in the face of an unpredictable cross wind and imperfect sensors. The network has over 20,000 nodes, and therefore this proof represents an improvement of 3 orders of magnitude over prior proofs about neural network enhanced systems in ITPs."
+impacts: "The software is used as a working tool in collaboration with HUJI and Stanford (researchers developing Marabou)"
+---

@@ -796,6 +796,14 @@ body {
 }
 
 
+.post-item {
+    display: none;
+}
+
+.post-item.visible {
+    display: flex;
+}
+
 
 
 
