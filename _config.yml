@@ -30,6 +30,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 markdown: kramdown
 
+port: 80
+
 # Build settings
 
 plugins:
